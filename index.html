@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aufgabenliste</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Meine Aufgaben</h1>
+
+    <form id="aufgaben-formular" class="eingabe">
+      <input
+        type="text"
+        id="aufgaben-eingabe"
+        placeholder="Neue Aufgabe eintippen…"
+        autocomplete="off"
+        required
+      >
+      <button type="submit">Hinzufügen</button>
+    </form>
+
+    <ul id="aufgaben-liste" class="liste"></ul>
+
+    <p id="leer-hinweis" class="hinweis">Noch keine Aufgaben – leg los!</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
